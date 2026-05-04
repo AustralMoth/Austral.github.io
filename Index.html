@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Educativa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0f1c;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      font-size: 2em;
+      background: #111827;
+      box-shadow: 0 0 15px cyan;
+    }
+
+    .perfil {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .perfil img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid cyan;
+      box-shadow: 0 0 20px cyan;
+    }
+
+    .seccion {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.2);
+    }
+
+    h2 {
+      color: cyan;
+    }
+
+    code {
+      display: block;
+      background: #111;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+      color: #00ffcc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🚀 Página Educativa - Programación
+  </header>
+
+  <!-- FOTO DE PERFIL -->
+  <div class="perfil">
+    <img src="perfil.jpg" alt="Foto de perfil">
+    <p>Instructor / Mentor</p>
+  </div>
+
+  <!-- SECCIÓN EDUCATIVA -->
+  <div class="seccion">
+    <h2>📘 Gestión de Excepciones en Python</h2>
+
+    <p><strong>Fundamento:</strong><br>
+    La gestión de excepciones permite que un programa no se rompa cuando ocurre un error. En lugar de eso, el programa puede manejar el problema y seguir funcionando.
+    </p>
+
+    <p><strong>¿Por qué es importante?</strong><br>
+    - Evita que el programa se cierre inesperadamente<br>
+    - Mejora la experiencia del usuario<br>
+    - Permite detectar errores comunes
+    </p>
+
+    <p><strong>Ejemplo básico:</strong></p>
+
+    <code>
+try:
+    edad = int(input("Edad: "))
+except ValueError:
+    print("Error: Ingresa un número válido")
+    </code>
+
+    <p><strong>Explicación:</strong></p>
+    <ul>
+      <li><strong>try:</strong> intenta ejecutar el código</li>
+      <li><strong>except:</strong> captura el error si ocurre</li>
+      <li><strong>ValueError:</strong> ocurre cuando ingresas texto en vez de número</li>
+    </ul>
+
+    <p><strong>Errores comunes:</strong></p>
+    <ul>
+      <li>ValueError</li>
+      <li>FileNotFoundError</li>
+      <li>ZeroDivisionError</li>
+    </ul>
+
+    <p><strong>Objetivo:</strong><br>
+    Crear programas más seguros y profesionales.
+    </p>
+  </div>
+
+  <footer>
+    © 2026 - Página creada por mí
+  </footer>
+
+</body>
+</html>
